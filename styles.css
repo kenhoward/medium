@@ -144,11 +144,7 @@ span {
 	position: absolute;
 }
 
-/*@media screen and (min-width: 865px) {
-
-}*/
-
-/*@media screen and (max-width: 865px) {
+@media screen and (max-width: 865px) {
 	.buttons {
 	display: none;
 	}
@@ -158,6 +154,6 @@ span {
 	.headerText {
 		display: none;
 	}
-}*/
+}
 
 /*865px*/
