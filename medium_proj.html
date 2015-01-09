@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Medium</title>
+		<link href="styles.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<meta charset="utf-8"> 
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<div id="header">
+			<img class="logo" src="http://i1.wp.com/www.entrepreneurial-insights.com/wp-content/uploads/2014/10/Medium-logo-dark.png" />
+			<div class="headerText">
+				<h4>published in</h4>
+				<h3>react tutorials</h3>
+			</div>
+			<div class="buttons">
+				<div class="searchButton"><i class="fa fa-search"></i></div>
+				<div class="signInButton">Sing in / Sign Up</div>
+			</div>	
+		</div>
+		<img class="mainPic" src="https://d262ilb51hltx0.cloudfront.net/max/2000/1*bs9PbxDndAW7mmqve3EQ-w.jpeg" />
+		<div class="mainContent">	
+			<h1>React Components</h1>
+				<p>Components are the smallest, yet most fundamental part of React. They’re similar, in concepts, to things like widgets and modules. React defines itself as a library for building user interfaces. As such, when you think of a user interface you want to build (with React), you need to think of it in terms of the smallest possible components that you can define.</p>
+
+				<p>These components include code which defines how DOM elements are created and how users can interact with them. Components can be defined purely in JavaScript or they can be defined in a superset (or extended variation) of JavaScript called JSX. If you decide to use JSX for your component definitions, you may also need a compiler application, but we’ll get to that in a minute.</p>
+
+			<div class="quote">
+				<p>We’re going to be referring to <span>pure JavaScript</span> as <span>JS</span> and <span>the React version of JavaScript</span> as <span>JSX</span>.</p>
+
+				<p>You can find the accompanying source-code, for this tutorial, at: <u><span>https://github.com/formativ/tutorial-react-components</u></span>.</p>
+
+				<p>Please post any errors you find, or questions you have as comments on this article or as issues on GitHub.</p>
+				
+				<p>Thanks to <u><span>Pete Hunt</u></span> for helping to improve this!</p>
+
+			</div>
+
+			<h2>Embedded HTML</h2>
+				<p>If you’ve been developing websites for a while, you may have flinched when I spoke about using HTML within your JavaScript. For the longest time, a development paradigm has existed which says that you should split HTML and JavaScript. Words like <strong>unobtrusive</strong> have been repurposed to express this kind of separation. That is exactly how I felt, until I started working with React.</p>
+				
+				<p>The reason this paradigm exists is to decrease coupling (how much things depend on each other) and increase cohesion (how well different things work together). So we have created an environment in which we try our best to make HTML (and templates) as free of logic as possible. We then need to attach behaviour to this in the form of external scripts.</p>
+
+				<p>There are trade-offs with this approach to doing things. For starters, it takes more effort trying to keep these two things separate. There are many template engines and languages. There are also many template parsers to handle them all. And yet these languages (with the exception of HTML) still seem to include a modicum of logical operations…</p>
+
+			<h2>Component</h2>
+				<p>Hopefully you’re willing to try this whole embedded HTML thing. In case not, I will create JS examples along with the JSX examples in this tutorial Let’s look at a simple component, just to get a feel for how one defines them:</p>
+
+				<div class="box">
+						<p>/**
+						<br>* @jsx React.DOM
+							<br>*/
+					</p>
+
+					<p>var HellowWord = React.createClass({
+						<br>render
+							<br>hellow world!					
+								<br>}
+									<br>});
+					</p>
+					
+					<p>React.renderComponent(
+						<br> < HelloWorld />
+							<br>document.body
+								<br>);
+					</p>
+				</div>
+
+			<h2>Conclusion</h2>
+				<p>Components are at the heart of React, and understanding them is essential to understanding how to build solid React interfaces. We’ve taken a brief look at a few examples, but there’s so much more to components. Stay tuned!</p>
+				
+				<p>If you enjoyed this tutorial; it would be helpful if you could click the <strong>Recommend</strong> button and share it with other developers.</p>
+		</div>
+		
+		<div class="footer"></div>
+
+	</body>
+
+</html>
